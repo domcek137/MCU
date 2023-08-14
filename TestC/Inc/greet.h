@@ -1,0 +1,2 @@
+void greetUser();
+void decision();

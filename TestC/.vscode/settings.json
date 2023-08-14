@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "process.h": "c",
+        "processing.h": "c",
+        "phonebook.h": "c",
+        "climits": "c",
+        "cmath": "c",
+        "cstdio": "c",
+        "cstdlib": "c",
+        "typeinfo": "c",
+        "greet.h": "c"
+    }
+}
