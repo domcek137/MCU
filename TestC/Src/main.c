@@ -3,10 +3,6 @@
 
 #include "greet.h"
 
-
-
-
-
 int main(){
     greetUser();
     return 0;

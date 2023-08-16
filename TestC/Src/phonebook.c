@@ -33,11 +33,6 @@ void create_contact(char* name, char* surname, char* number)
     strncpy(entry.surname, surname, MAX_SURNAME-1);
     strncpy(entry.number, number, MAX_PHONE-1);
 
-    add_contact(entry);
-}
-
-void add_contact(struct T_ENTRY entry)
-{
     if( number_of_entries<MAX_ENTRIES ) {
         entries[number_of_entries++] = entry;
     }
@@ -46,7 +41,7 @@ void add_contact(struct T_ENTRY entry)
 void print_contacts()
 {
     for (int i = 0; i < number_of_entries;i++){
-        printf("\n%d: %s - %s - %s\n", i, entries[i].name, entries[i].surname, entries[i].number);
+        printf("\n%d: %s - %s - %s", i, entries[i].name, entries[i].surname, entries[i].number);
     }
     decision();
 };
@@ -78,7 +73,6 @@ void search_by_name()
     if (x == 0)
     {
         printf("\n!INVALID NAME!\n");
-        search_by_name();
     }
     decision();
 }
@@ -111,7 +105,6 @@ void search_by_number()
     if (x == 0)
     {
         printf("\n!INVALID NUMBER!\n");
-        search_by_name();
     }
     decision();
 }

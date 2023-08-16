@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 #include "greet.h"
 #include "branch.h"
@@ -12,7 +11,6 @@ void greetUser(){
     scanf("%s", name);
     printf("hello ");
     puts(name);
-    _sleep(1000);
     decision();
 }
 
